@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 2px solid black;
+   
+            display: flex;
+            /* jayga short porle porer line e niye jabe */
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            /* eita use korle column borabor allign hoye jabe
+            1. flex-direction: column; (upor theke niche jabe)
+            2. flex-direction: column; (niche theke upore jabe)
+
+            eitar moto same vabe -> row, row-reverse o use kora jay
+             */
+            flex-direction: column; 
+        }
+        .box{
+            border: 2px dotted rebeccapurple;
+    
+            height: 20px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox Layout</h1>
+
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+    </div>
+    
+</body>
+</html>
